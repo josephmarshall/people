@@ -1,0 +1,12 @@
+<h1><%= @person.name %></h1>
+<h3>Age: <%= @person.age %></h3>
+<h3>Hair: <%= @person.hair_color %></h3>
+<h3>Eyes: <%= @person.eye_color %></h3>
+<h3>Gender: <%= @person.gender %></h3>
+<h3>Alive: <%= @person.alive %></h3>
+<button><%= button_to 'Back', people_path, method: :get %></button>
+<button><%= button_to 'Edit', edit_person_path, method: :get %></button>
+<button><%= button_to 'Delete', @person, method: :delete %></button>
+<p>Updated: <%= @person.updated_at %></p>
+
+

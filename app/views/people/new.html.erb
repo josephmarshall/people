@@ -1,0 +1,32 @@
+<h1>New Person</h1>
+<%= form_for @person do |person| %>
+<h2>  
+<%= person.label :name %>
+<%= person.text_field :name %>
+</h2>
+<h2>
+  <%= person.label :age %>
+  <%= person.text_field :age %>
+</h2>
+
+<h2>
+  <%= person.label :hair_color %>
+  <%= person.text_field :hair_color %>
+</h2>
+<h2>
+  <%= person.label :eye_color %>
+  <%= person.text_field :eye_color %>
+</h2>
+<h2>
+  <%= person.label :gender %>
+  <%= person.text_field :gender %>
+</h2>
+<h2>
+  <%= person.label :alive %>
+  <%= person.text_field :alive %>
+</h2>
+
+<h2>
+  <%= person.submit %>
+</h2>
+  <% end %>

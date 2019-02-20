@@ -1,0 +1,4 @@
+<% @people.each do |person| %>
+<h4> . <%= link_to "#{person.name}", person_path(person)%>  </h4>
+<% end %>
+<button><%= button_to 'New', new_person_path, method: :get %></button>
